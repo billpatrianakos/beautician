@@ -6,10 +6,10 @@ set :user,    "root"
 set :application, ""
 
 # use your local repository as the source
-#set :repository, "file://#{File.expand_path('.')}"
+set :repository, "file://#{File.expand_path('.')}"
 
 # or use a hosted repository (can be GitHub or your own server)
-set :repository, "ssh://bill@writeapp.me/git/beautician.git"
+#set :repository, "ssh://bill@writeapp.me/git/beautician.git"
 
 server "#{domain}", :app, :web, :db, :primary => true
 
