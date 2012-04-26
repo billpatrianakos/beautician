@@ -1,17 +1,18 @@
-/*
- * Fraction.less Typography
- * Adapted from Twitter's Bootstrap
- * Include at the top of style.less
- */
+/*:::: TYPE ::::*/
 
 @baseFontSize:    14px;
-@baseFontFamily:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@baseFontFamily:  "Cabin Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @baseLineHeight:  18px;
 @altFontFamily:   Georgia, "Times New Roman", Times, serif;
 
-@headingsFontFamily:    inherit;
-@headingsFontWeight:    bold;
+@headingsFontFamily:    Trocchi, Georgia, Times, serif;
+@headingsFontWeight:    normal;
 @headingsColor:         inherit;
+
+@black: #353635;
+@white: #FFFBF6;
+@beige: #ECE8D5;
+@red: #C04921;
 
 // BODY TEXT
 // ---------
@@ -21,10 +22,6 @@ p {
   font-family: @baseFontFamily;
   font-size: @baseFontSize;
   line-height: @baseLineHeight;
-  small {
-    font-size: @baseFontSize - 2;
-    color: @grayLight;
-  }
 }
 .lead {
   margin-bottom: @baseLineHeight;
@@ -40,57 +37,40 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-family: @headingsFontFamily;
   font-weight: @headingsFontWeight;
-  color: @headingsColor;
   text-rendering: optimizelegibility; // Fix the character spacing for headings
-  small {
-    font-weight: normal;
-    color: @grayLight;
-  }
+  color: @black;
 }
 h1 {
   font-size: 30px;
   line-height: @baseLineHeight * 2;
-  small {
-    font-size: 18px;
-  }
 }
 h2 {
   font-size: 24px;
   line-height: @baseLineHeight * 2;
-  small {
-    font-size: 18px;
-  }
 }
 h3 {
   line-height: @baseLineHeight * 1.5;
   font-size: 18px;
-  small {
-    font-size: 14px;
-  }
 }
 h4, h5, h6 {
   line-height: @baseLineHeight;
 }
 h4 {
   font-size: 14px;
-  small {
-    font-size: 12px;
-  }
 }
 h5 {
   font-size: 12px;
 }
 h6 {
   font-size: 11px;
-  color: @grayLight;
-  text-transform: uppercase;
+  color: @black;
 }
 
 // Page header
 .page-header {
   padding-bottom: @baseLineHeight - 1;
   margin: @baseLineHeight 0;
-  border-bottom: 1px solid @grayLighter;
+  font-size: 80px;
 }
 .page-header h1 {
   line-height: 1;
@@ -162,7 +142,7 @@ dd {
 hr {
   margin: @baseLineHeight 0;
   border: 0;
-  border-top: 1px solid @hrBorder;
+  border-top: 1px solid @black;
   border-bottom: 1px solid @white;
 }
 
@@ -174,71 +154,5 @@ em {
   font-style: italic;
 }
 .muted {
-  color: @grayLight;
-}
-
-// Abbreviations and acronyms
-abbr[title] {
-  border-bottom: 1px dotted #ddd;
-  cursor: help;
-}
-abbr.initialism {
-  font-size: 90%;
-  text-transform: uppercase;
-}
-
-// Blockquotes
-blockquote {
-  padding: 0 0 0 15px;
-  margin: 0 0 @baseLineHeight;
-  border-left: 5px solid @grayLighter;
-  p {
-    margin-bottom: 0;
-    #font > .shorthand(16px,300,@baseLineHeight * 1.25);
-  }
-  small {
-    display: block;
-    line-height: @baseLineHeight;
-    color: @grayLight;
-    &:before {
-      content: '\2014 \00A0';
-    }
-  }
-
-  // Float right with text-align: right
-  &.pull-right {
-    float: right;
-    padding-left: 0;
-    padding-right: 15px;
-    border-left: 0;
-    border-right: 5px solid @grayLighter;
-    p,
-    small {
-      text-align: right;
-    }
-  }
-}
-
-// Quotes
-q:before,
-q:after,
-blockquote:before,
-blockquote:after {
-  content: "";
-}
-
-// Addresses
-address {
-  display: block;
-  margin-bottom: @baseLineHeight;
-  line-height: @baseLineHeight;
-  font-style: normal;
-}
-
-// Misc
-small {
-  font-size: 100%;
-}
-cite {
-  font-style: normal;
+  color: @black;
 }
