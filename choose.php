@@ -1,3 +1,13 @@
+<?php
+/*
+ * FILE: choose.php
+ * PURPOSE: Choose template to copy/paste from.
+ */
+
+# Get template name
+$template = $_GET['template'];
+
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
@@ -45,87 +55,28 @@
 	<section id="main-container" class="container">
 		<section id="intro" class="row">
 			<article class="twelve centered-text">
-				<h1 class="huge">Generate beautiful documents from plain text</h1>
+				<h1 class="huge">Copy-paste your test or just write in the box below</h1>
 				<p>
-					(Perfect for printing impressive reports, resumes, proposals, and more!)
+					(Use Markdown for best results)
 				</p>
 			</article>
 		</section>
-		<section id="get-started" class="row">
-			<article class="twelve centered-text">
-				<h2>Get started:</h2>
-			</article>
-		</section>
-		<section id="options" class="row">
+		<section class="row ptop">
 			<article class="two">
-				<!-- DUMMY COLUMN -->
+				<!-- EMPTY PADDING -->
 			</article>
-			<article class="four">
-				<div class="option-container">
-					<h3 class="centered-text">Option 1</h3>
-					<p>
-						Choose a template below then copy and paste your text into Beautician and hit <strong>Generate</strong>. Beautician will spit out a beautifully formatted document which you can then print.
+			<article class="eight centered-text">
+				<fieldset>
+					<form method="post" action="app/generate.php">
+						<textarea name="content"></textarea>
 						<br />
-						&nbsp;
-					</p>
-				</div>
-			</article>
-			<article class="four">
-				<div class="option-container">
-					<h3 class="centered-text">Option 2</h3>
-					<p>
-						Upload a plain text or Markdown file and Beautician will generate a beautiful document ready for printing.
-					</p>
-					<p class="centered-text">
-						<br />
-						<a class="upload-btn" href="#"><i class="icon-upload icon-large"></i> Upload file</a>
-					</p>
-				</div>
+						<input type="hidden" name="template" value="<?php echo "$template"; ?>" />
+						<input type="submit" value="Generate!" />
+					</form>
+				</fieldset>
 			</article>
 			<article class="two last">
-				<!-- DUMMY COLUMN -->
-			</article>
-		</section>
-		<section id="templates" class="row">
-			<article class="three">
-				<div class="template-choice">
-					<h4 class="centered-text">Fun on the Ranch</h4>
-					<p class="centered-text">
-						<br />
-						<a class="choose" href="choose.php?template=fun-on-the-ranch"><i class="icon-ok-sign icon-large"></i> Use this</a> 
-						<a class="preview" href="#"><i class="icon-eye-open icon-large"></i> Preview</a>
-					</p>
-				</div>
-			</article>
-			<article class="three">
-				<div class="template-choice">
-					<h4 class="centered-text">Whimsy Pro</h4>
-					<p class="centered-text">
-						<br />
-						<a class="choose" href="choose.php?template=whimsy-pro"><i class="icon-ok-sign icon-large"></i> Use this</a> 
-						<a class="preview" href="#"><i class="icon-eye-open icon-large"></i> Preview</a>
-					</p>
-				</div>
-			</article>
-			<article class="three">
-				<div class="template-choice">
-					<h4 class="centered-text">Elegant</h4>
-					<p class="centered-text">
-						<br />
-						<a class="choose" href="choose.php?template=elegant"><i class="icon-ok-sign icon-large"></i> Use this</a> 
-						<a class="preview" href="#"><i class="icon-eye-open icon-large"></i> Preview</a>
-					</p>
-				</div>
-			</article>
-			<article class="three last">
-				<div class="template-choice">
-					<h4 class="centered-text">Totally Meta</h4>
-					<p class="centered-text">
-						<br />
-						<a class="choose" href="choose.php?template=totally-meta"><i class="icon-ok-sign icon-large"></i> Use this</a> 
-						<a class="preview" href="#"><i class="icon-eye-open icon-large"></i> Preview</a>
-					</p>
-				</div>
+				<!-- EMPTY PADDING -->
 			</article>
 		</section>
 	</section>

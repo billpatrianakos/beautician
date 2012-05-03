@@ -158,7 +158,7 @@
 	border: 1px solid @black;
 }
 
-.upload-btn {
+.upload-btn, .upload-btn:visited {
 	.blue-gradient;
 	padding: 6px 10px;
 	font-weight: 700;
@@ -168,6 +168,13 @@
 	.text-shadow(0, 1px, 1px, @dblue);
 	border: 1px solid @dblue;
 	vertical-align: middle;
+}
+
+.upload-btn:hover {
+	.inset-shadow(0, 0, 0);
+	border: 1px solid @blue;
+	background: @dblue;
+	.text-shadow(0, 1px, 1px, @blue);
 }
 
 .choose, .preview {
@@ -207,7 +214,13 @@
 /*:::: FORMs ::::*/
 
 textarea {
-  
+	width: 100%;
+	padding: 10px;
+	border: 1px solid @beige;
+	color: @black;
+	.border-radius(3px);
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	height: 300px;
 }
 
 input[type=text], input[type=email], input[type=password] {
@@ -215,7 +228,22 @@ input[type=text], input[type=email], input[type=password] {
 }
 
 input[type=submit] {
-  
+	.blue-gradient;
+	padding: 6px 10px;
+	font-weight: 700;
+	color: @white;
+	.border-radius(6px);
+	.inset-shadow(inset, 0, 1px, 0, @white);
+	.text-shadow(0, 1px, 1px, @dblue);
+	border: 1px solid @dblue;
+	vertical-align: middle;
+	margin-top: 10px;
+}
+
+input[type=submit]:active {
+	background: @dblue;
+	border: 1px solid @blue;
+	.text-shadow(0, 1px, 1px, @blue);
 }
 
 
@@ -284,9 +312,13 @@ footer a, footer a:visited {
 	font-weight: 700;
 }
 
+.ptop {
+	padding-top: 20px;
+}
 
-
-
+.mtop {
+	margin-top: 20px;
+}
 
 
 

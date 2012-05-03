@@ -1,0 +1,196 @@
+@import url('http://fonts.googleapis.com/css?family=Arvo|PT+Sans');
+/*
+ * Whimsy Pro
+ */
+/******************** Baseline grid: 13/18px ********************/
+body {
+  font-size: 75%;
+  line-height: 1.5;
+  /*12/18*/
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  font-family: 'Arvo', serif;
+  color: #ad421f;
+}
+h1,
+h2 {
+  line-height: 36px;
+  margin-bottom: 18px;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 18px;
+}
+h3,
+h4,
+h5,
+h6 {
+  line-height: 18px;
+}
+h1 {
+  font-size: 36px;
+  top: 5px;
+}
+h2 {
+  font-size: 28px;
+  top: 8px;
+}
+h3 {
+  font-size: 22px;
+  top: 1px;
+}
+h4 {
+  font-size: 18px;
+  top: 2px;
+}
+h5 {
+  font-size: 15px;
+  top: 4px;
+}
+h6 {
+  font-size: 13px;
+  top: 5px;
+}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child {
+  margin-top: 0;
+}
+p,
+pre,
+address {
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
+  top: 5px;
+  color: #353635;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+}
+small {
+  font-size: 11px;
+}
+abbr,
+code,
+kbd,
+samp,
+small,
+var {
+  line-height: 15px;
+}
+ul,
+ol,
+dl,
+dialog {
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
+  top: 5px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  font-family: 'PT Sans', sans-serif;
+}
+li ul,
+li ol,
+ul ul,
+ol ol {
+  top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+li h1,
+li h2,
+li h3,
+li h4,
+li h5,
+li h6,
+li p {
+  top: 0;
+}
+table {
+  font-size: 13px;
+}
+caption {
+  font-size: 13px;
+  line-height: 18px;
+  position: relative;
+}
+hr {
+  position: relative;
+  height: 4px;
+  margin: 18px 0 14px 0;
+}
+body {
+  color: black;
+  background-color: #F8F8F8;
+  padding: 0.7em;
+  width: 960px;
+}
+img {
+  border: 0;
+  max-width: 100%;
+}
+a {
+  color: #4183c4;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a code,
+a:link code,
+a:visited code {
+  color: #4183c4;
+}
+@media screen and (min-width: 768px) {
+  body {
+    width: 748px;
+    margin: 10px auto;
+  }
+}
+/* Print styles */
+@media print {
+  * {
+    background: transparent !important;
+    color: #353635 !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+  /* Black prints faster: h5bp.com/s */
+  /*a, a:visited { text-decoration: underline; }
+    a[href]:after { content: " (" attr(href) ")"; }
+    abbr[title]:after { content: " (" attr(title) ")"; }
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  /*
+    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+    thead { display: table-header-group; } /* h5bp.com/t */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
