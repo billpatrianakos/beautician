@@ -170,11 +170,12 @@
 	vertical-align: middle;
 }
 
-.upload-btn:hover {
-	.inset-shadow(0, 0, 0);
-	border: 1px solid @blue;
+a.upload-btn:hover {
+	.inset-shadow(inset, 0, 0, 0, @dblue);
+	border: 1px solid @blue !important;
 	background: @dblue;
 	.text-shadow(0, 1px, 1px, @blue);
+	color: @white;
 }
 
 .choose, .preview {
@@ -192,10 +193,11 @@
 }
 
 .choose:hover {
-	.inset-shadow(0, 0, 0);
+	.inset-shadow(inset, 0, 0, 0, @dred);
 	background: @dred;
 	border: 1px solid @red;
 	.text-shadow(0, 1px, 1px, @red);
+	color: @white;
 }
 
 .preview, .preview:visited {
@@ -205,10 +207,11 @@
 }
 
 .preview:hover {
-	.inset-shadow(0, 0, 0);
+	.inset-shadow(inset, 0, 0, 0, @dpink);
 	background: @dpink;
 	border: 1px solid @pink;
 	.text-shadow(0, 1px, 1px, @pink);
+	color: @white;
 }
 
 /*:::: FORMs ::::*/
@@ -251,8 +254,14 @@ input[type=submit]:active {
 |* THE REST OF YOUR STYLES BELOW HERE *|
 \**************************************/
 
-a {
+a, a:visited {
 	text-decoration: none;
+	color: @red;
+	font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
+
+a:hover {
+	color: @blue;
 }
 
 .tagline {
@@ -304,6 +313,11 @@ footer {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-top: 20px;
+	/* Sticky footer */
+	position: relative;
+	margin-top: -65px; /* negative value of footer height (see #main) */
+	height: 150px;
+	clear:both;
 }
 
 footer a, footer a:visited {
@@ -320,6 +334,36 @@ footer a, footer a:visited {
 	margin-top: 20px;
 }
 
+.template-choice {
+	padding: 3px;
+	border: 1px solid @dbeige;
+	.border-radius(3px);
+	.beige-gradient;
+}
+
+.template-choice:hover {
+	.blue-gradient;
+	border: 1px solid @dblue;
+}
+
+.template-choice img {
+	border: 1px solid @dblue;
+	padding: 3px;
+	.blue-gradient;
+	.border-radius(3px);
+}
+
+.template-choice:hover img {
+	border: 1px solid @dbeige;
+	padding: 3px;
+	.beige-gradient;
+	.border-radius(3px);
+}
+
+.template-choice:hover h4 {
+	color: @white;
+	.text-shadow(0, 1px, 1px, @dblue);
+}
 
 
 
@@ -329,6 +373,14 @@ footer a, footer a:visited {
 
 
 
+
+
+/*:::: STICKY FOOTER ::::*/
+
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+	padding-bottom: 65px;}  /* must be same height as the footer */
 
 /*:::: FANCYBOX ::::*/
 
@@ -406,7 +458,7 @@ footer a, footer a:visited {
 }
 
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-	background-image: url('fancybox_sprite.png');
+	background-image: url('../img/ui/fancybox_sprite.png');
 }
 
 #fancybox-loading {
@@ -424,7 +476,7 @@ footer a, footer a:visited {
 #fancybox-loading div {
 	width: 44px;
 	height: 44px;
-	background: url('fancybox_loading.gif') center center no-repeat;
+	background: url('../img/ui/fancybox_loading.gif') center center no-repeat;
 }
 
 .fancybox-close {

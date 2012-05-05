@@ -28,10 +28,16 @@
 	  </style>
 	<![endif]-->
 
+	<!--[if !IE 7]>
+		<style type="text/css">
+			#wrap {display:table;height:100%}
+		</style>
+	<![endif]-->
+
 </head>
 
 <body>
-
+<div id="wrap">
 	<header class="container">
 		<section class="row">
 			<article class="six">
@@ -44,7 +50,7 @@
 			</nav>
 		</section>
 	</header>
-	<section id="main-container" class="container">
+	<section id="main" class="container">
 		<section id="intro" class="row">
 			<article class="twelve centered-text">
 				<h1 class="huge">Generate beautiful documents from plain text</h1>
@@ -64,7 +70,7 @@
 			</article>
 			<article class="four">
 				<div class="option-container">
-					<h3 class="centered-text">Option 1</h3>
+					<h3 class="centered-text">Copy-paste to generate:</h3>
 					<p>
 						Choose a template below then copy and paste your text into Beautician and hit <strong>Generate</strong>. Beautician will spit out a beautifully formatted document which you can then print.
 						<br />
@@ -74,7 +80,7 @@
 			</article>
 			<article class="four">
 				<div class="option-container">
-					<h3 class="centered-text">Option 2</h3>
+					<h3 class="centered-text">Or upload a file:</h3>
 					<p>
 						Upload a plain text or Markdown file and Beautician will generate a beautiful document ready for printing.
 					</p>
@@ -94,8 +100,12 @@
 					<h4 class="centered-text">Fun on the Ranch</h4>
 					<p class="centered-text">
 						<br />
+						<a class="preview1" href="img/ranch.png" rel="preview">
+							<img src="img/ranch-small.png" alt="fun on the ranch theme" />
+						</a>
+						<br /><br />
 						<a class="choose" href="choose.php?template=fun-on-the-ranch"><i class="icon-ok-sign icon-large"></i> Use this</a> 
-						<a class="preview" href="#"><i class="icon-eye-open icon-large"></i> Preview</a>
+						<a class="preview" href="img/ranch.png" rel="preview1"><i class="icon-eye-open icon-large"></i> Preview</a>
 					</p>
 				</div>
 			</article>
@@ -104,8 +114,12 @@
 					<h4 class="centered-text">Whimsy Pro</h4>
 					<p class="centered-text">
 						<br />
+						<a class="preview1" href="img/whimsy.png" rel="preview">
+							<img src="img/whimsy-small.png" />
+						</a>
+						<br /><br />
 						<a class="choose" href="choose.php?template=whimsy-pro"><i class="icon-ok-sign icon-large"></i> Use this</a> 
-						<a class="preview" href="#"><i class="icon-eye-open icon-large"></i> Preview</a>
+						<a class="preview" href="img/whimsy.png" rel="preview1"><i class="icon-eye-open icon-large"></i> Preview</a>
 					</p>
 				</div>
 			</article>
@@ -114,8 +128,12 @@
 					<h4 class="centered-text">Elegant</h4>
 					<p class="centered-text">
 						<br />
+						<a class="preview1" href="img/elegant.png" rel="preview">
+							<img src="img/elegant-small.png" />
+						</a>
+						<br /><br />
 						<a class="choose" href="choose.php?template=elegant"><i class="icon-ok-sign icon-large"></i> Use this</a> 
-						<a class="preview" href="#"><i class="icon-eye-open icon-large"></i> Preview</a>
+						<a class="preview" href="img/elegant.png" rel="preview1"><i class="icon-eye-open icon-large"></i> Preview</a>
 					</p>
 				</div>
 			</article>
@@ -124,18 +142,25 @@
 					<h4 class="centered-text">Totally Meta</h4>
 					<p class="centered-text">
 						<br />
+						<a class="preview1" href="img/meta.png" rel="preview">
+							<img src="img/meta-small.png" />
+						</a>
+						<br /><br />
 						<a class="choose" href="choose.php?template=totally-meta"><i class="icon-ok-sign icon-large"></i> Use this</a> 
-						<a class="preview" href="#"><i class="icon-eye-open icon-large"></i> Preview</a>
+						<a class="preview" href="img/meta.png" rel="preview1"><i class="icon-eye-open icon-large"></i> Preview</a>
 					</p>
 				</div>
 			</article>
 		</section>
 	</section>
+</div>
 	<footer class="container">
 		<section class="row">
 			<article class="twelve centered-text">
 				<p>
 					Copyright &copy; 2012 <a href="http://chooseclever.com">Clever Web Design</a>, <a href="http://cleverlabs.info">Clever Labs</a>, and <a href="http://billpatrianakos.me">Bill Patrianakos</a>
+					<br />
+					Hosting graciously provided by <a href="http://www.linode.com/?r=203bf1653ea1cb35bf41b7e0bf99982dd3344fd3">Linode</a> with DNS at <a href="http://www.mediatemple.net/#a_aid=4ef681de57d85">MediaTemple</a>
 				</p>
 			</article>
 		</section>

@@ -1,7 +1,7 @@
 /*:::: TYPE ::::*/
 p {
   margin: 0 0 9px;
-  font-family: "Cabin Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
 }
@@ -18,8 +18,8 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: Trocchi, Georgia, Times, serif;
-  font-weight: normal;
+  font-family: Arvo, Georgia, Times, serif;
+  font-weight: inherit;
   text-rendering: optimizelegibility;
   color: #353635;
 }
@@ -62,6 +62,7 @@ ul,
 ol {
   padding: 0;
   margin: 0 0 9px 25px;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 ul ul,
 ul ol,
@@ -110,7 +111,7 @@ hr {
   margin: 18px 0;
   border: 0;
   border-top: 1px solid #353635;
-  border-bottom: 1px solid #fffbf6;
+  border-bottom: 1px solid #fffbe7;
 }
 strong {
   font-weight: bold;

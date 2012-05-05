@@ -12,3 +12,18 @@ $(document).ready(function() {
 		closeEffect	: 'none'
 	});
 });
+
+// Template Previews
+$(document).ready(function() {
+	$(".preview").fancybox({
+		openEffect	: 'elastic',
+		closeEffect	: 'none'
+	});
+});
+
+$(document).ready(function() {
+	$(".preview1").fancybox({
+		openEffect	: 'elastic',
+		closeEffect	: 'none'
+	});
+});
