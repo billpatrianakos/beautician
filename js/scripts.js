@@ -27,3 +27,11 @@ $(document).ready(function() {
 		closeEffect	: 'none'
 	});
 });
+
+// File upload
+$(document).ready(function() {
+	$(".upload").fancybox({
+		openEffect	: 'elastic',
+		closeEffect	: 'none'
+	});
+});

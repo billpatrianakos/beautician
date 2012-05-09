@@ -86,12 +86,40 @@
 					</p>
 					<p class="centered-text">
 						<br />
-						<a class="upload-btn" href="#"><i class="icon-upload icon-large"></i> Upload file</a>
+						<a class="upload-btn upload" href="#upload"><i class="icon-upload icon-large"></i> Upload file</a>
 					</p>
 				</div>
 			</article>
 			<article class="two last">
 				<!-- DUMMY COLUMN -->
+			</article>
+		</section>
+		<section class="row" id="upload" style="display: none">
+			<article class="twelve centered-text">
+				<h2>Upload</h2>
+				<fieldset>
+					<form enctype="multipart/form-data" action="app/upload.php" method="POST">
+						<input type="hidden" name="MAX_FILE_SIZE" value="100000" />
+						<p>
+							Upload a plain text or Markdown file:
+						<br /><br />
+						<input name="file" type="file" />
+						<br /><br />
+						(File name must end in ".txt", ".md", or ".markdown")
+						<br /><br />
+						Choose a template:
+						<br />
+						<select name="template">
+							<option value="fun-on-the-ranch">Fun on the Ranch</option>
+							<option value="whimsy-pro">Whimsy Pro</option>
+							<option value="elegant">Elegant</option>
+							<option value="totally-meta">Totally Meta</option>
+						</select>
+						<br /><br />
+						<input type="submit" value="Upload File" />
+						</p>
+					</form>
+				</fieldset>
 			</article>
 		</section>
 		<section id="templates" class="row">

@@ -41,18 +41,20 @@ $template = $_GET['template'];
 </head>
 
 <body>
-
+<div id="wrap">
 	<header class="container">
 		<section class="row">
 			<article class="six">
 				<h3>Beautician: <span class="tagline">make any text look sexy</span></h3>
 			</article>
 			<nav class="six last">
-				<!-- Navigation will go here -->
+				<ul>
+					<li><a class="md-guide fancybox.iframe" data-fancybox-type="iframe" href="assets/markdown.html">Markdown Reference</a></li>
+				</ul>
 			</nav>
 		</section>
 	</header>
-	<section id="main-container" class="container">
+	<section id="main" class="container">
 		<section id="intro" class="row">
 			<article class="twelve centered-text">
 				<h1 class="huge">Copy-paste your test or just write in the box below</h1>
@@ -80,6 +82,7 @@ $template = $_GET['template'];
 			</article>
 		</section>
 	</section>
+</div>
 	<footer class="container">
 		<section class="row">
 			<article class="twelve centered-text">
